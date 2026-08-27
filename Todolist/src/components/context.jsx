@@ -7,10 +7,6 @@ export default function Content(){
             <button>ADD</button>
             <br></br>
             <h2>MY TODOS</h2>
-            <ul>
-            <li></li>
-            <li></li>
-            </ul>
         </>
     );
 }
