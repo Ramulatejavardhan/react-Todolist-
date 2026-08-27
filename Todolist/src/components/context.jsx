@@ -1,10 +1,16 @@
 export default function Content(){
     return(
         <>
-            <h1>TODO-LIST</h1>
-            <article>
+            <h1>TODO LIST</h1>
             <input type="text" placeholder="Enter Ur Task"></input>
-            </article>
+            <br></br>
+            <button>ADD</button>
+            <br></br>
+            <h2>MY TODOS</h2>
+            <ul>
+            <li></li>
+            <li></li>
+            </ul>
         </>
     );
 }
