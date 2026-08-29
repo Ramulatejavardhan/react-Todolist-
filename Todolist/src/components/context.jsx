@@ -1,6 +1,6 @@
 import { useState } from "react"
 export default function Content(){
-    const [count,setcount]=useState();
+    const [task,settask]=useState("");
     return(
         <>
             <h1>TODO LIST</h1>
