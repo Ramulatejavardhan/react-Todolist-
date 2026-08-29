@@ -1,4 +1,6 @@
+import { useState } from "react"
 export default function Content(){
+    const [count,setcount]=useState();
     return(
         <>
             <h1>TODO LIST</h1>
