@@ -4,7 +4,7 @@ export default function Content(){
     return(
         <>
             <h1>TODO LIST</h1>
-            <input type="text" placeholder="Enter Ur Task"></input>
+            <input type="text" placeholder="Enter Ur Task" onChange={}></input>
             <br></br>
             <button>ADD</button>
             <br></br>
