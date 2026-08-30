@@ -1,12 +1,13 @@
 import { useState } from "react"
 export default function Content(){
     const [task,settask]=useState("");
+    const [todos,settodos]=useState([]);
     return(
         <>
             <h1>TODO LIST</h1>
             <input type="text" onChange={(event)=>settask(event.target.value)}  placeholder="Enter Ur Task"></input>
             <br></br>
-            <button>ADD</button>
+            <button onClick={(event)=>settodos(event.target.value)}>ADD</button>
             <br></br>
             <h2>MY TODOS</h2>
             <h3>{task}</h3>
