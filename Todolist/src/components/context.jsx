@@ -10,7 +10,9 @@ export default function Content(){
             <button onClick={()=>settodos([...todos,task])}>ADD</button>
             <br></br>
             <h2>MY TODOS</h2>
-            <h3>{task}</h3>
+            <ul>
+                <li>{todos}</li>
+            </ul>
         </>
     );
 }
