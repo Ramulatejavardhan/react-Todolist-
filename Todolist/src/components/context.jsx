@@ -11,7 +11,9 @@ export default function Content(){
             <br></br>
             <h2>MY TODOS</h2>
             <ul>
-                <li>{todos}</li>
+                {todos.map((todo)=>(
+                    <li>{todo}</li>
+                ))}
             </ul>
         </>
     );
