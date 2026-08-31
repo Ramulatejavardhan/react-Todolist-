@@ -6,8 +6,13 @@ export default function Content(){
         <>
             <h1>TODO LIST</h1>
             <input type="text" onChange={(event)=>settask(event.target.value)}  placeholder="Enter Ur Task"></input>
+            {
+                if({task===""}){
+                    return alert("Enter new task");
+                }
+            }
             <br></br>
-            <button onClick={()=>settodos([...todos,task])}>ADD</button>
+            <button onClick={()=>{settodos([...todos,task]); settask("");}}>ADD</button>
             <br></br>
             <h2>MY TODOS</h2>
             <ul>
