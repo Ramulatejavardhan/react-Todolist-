@@ -21,10 +21,12 @@ export default function Content(){
                     <li key={todo}>{todo}</li>
                 ))}
             </ul>
-            {todos.map((todo)=>{
+            {todos.map((todo)=>(
+                <>
                 <h2>{todo}</h2>
-                
-            }
+                <button>Delete</button>
+                </>
+            )
             )}
         </>
     );
