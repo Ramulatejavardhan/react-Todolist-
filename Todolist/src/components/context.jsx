@@ -23,7 +23,6 @@ export default function Content(){
             </ul>
             {todos.map((todo)=>(
                 <>
-                <h2>{todo}</h2>
                 <button>Delete</button>
                 </>
             )
