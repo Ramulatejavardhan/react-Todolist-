@@ -8,7 +8,7 @@ export default function Content(){
             <input type="text" onChange={(event)=>settask(event.target.value)}  placeholder="Enter Ur Task"></input>
             <br></br>
             <button onClick={()=>{if(task===""){
-                    alert("Enter a task inside the input field");
+                    alert("Enter ur task inside the input field");
                 }else{
                     settodos([...todos,task]); settask("");
                 }
@@ -24,7 +24,7 @@ export default function Content(){
             {todos.map((todo)=>(
                 <>
                 <button onClick={() => {const newtodos=todos.filter((item) => item!==todo);
-                    
+                    settodos(newtodos);
                 }}>Delete</button>
                 </>
             )
