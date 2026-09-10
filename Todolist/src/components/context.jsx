@@ -18,18 +18,21 @@ export default function Content(){
             <h2>MY TODOS</h2>
             <ul>
                 {todos.map((todo) => (
-        <div key={todo}>
-        <span>{todo}</span>
+            <li key={todo}>
+        {todo}
 
         <button onClick={() => {
-            const newtodos = todos.filter((item) => item !== todo);
+            const newtodos = todos.filter(
+                (item) => item !== todo
+            );
+
             settodos(newtodos);
         }}>
             Delete
         </button>
-    </div>
-            )
-            )}
+    </li>
+        ))}
+        </ul>
         </>
     );
 }
