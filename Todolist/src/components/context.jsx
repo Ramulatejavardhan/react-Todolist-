@@ -17,16 +17,17 @@ export default function Content(){
             <br></br>
             <h2>MY TODOS</h2>
             <ul>
-                {todos.map((todo)=>(
-                    <li key={todo}>{todo}</li>
-                ))}
-            </ul>
-            {todos.map((todo)=>(
-                <>
-                <button onClick={() => {const newtodos=todos.filter((item) => item!==todo);
-                    settodos(newtodos);
-                }}>Delete</button>
-                </>
+                {todos.map((todo) => (
+        <div key={todo}>
+        <span>{todo}</span>
+
+        <button onClick={() => {
+            const newtodos = todos.filter((item) => item !== todo);
+            settodos(newtodos);
+        }}>
+            Delete
+        </button>
+    </div>
             )
             )}
         </>
