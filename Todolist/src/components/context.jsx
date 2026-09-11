@@ -13,7 +13,7 @@ export default function Content(){
                     settodos([...todos,task]); settask("");
                 }
             }}>
-            ADD</button>
+            ADD TODO</button>
             <br></br>
             <h2>MY TODOS</h2>
             <ul>
