@@ -20,12 +20,10 @@ export default function Content(){
                 {todos.map((todo) => (
             <li key={todo}>
         {todo}
-
         <button onClick={() => {
             const newtodos = todos.filter(
                 (item) => item !== todo
             );
-
             settodos(newtodos);
         }}>
             Delete
