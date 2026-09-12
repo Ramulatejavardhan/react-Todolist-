@@ -10,7 +10,12 @@ export default function Content(){
             <button onClick={()=>{if(task===""){
                     alert("Enter other task inside the input field");
                 }else{
-                    settodos([...todos,task]); settask("");
+                    settodos([...todos,
+                        {
+                            text: task,
+                            completed: false
+                        }
+                    ]);
                 }
             }}>
             ADD</button>
