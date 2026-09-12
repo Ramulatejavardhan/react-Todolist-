@@ -23,8 +23,8 @@ export default function Content(){
             <h2>MY TODOS</h2>
             <ul>
                 {todos.map((todo) => (
-            <li key={todo}>
-        {todo}
+            <li key={todo.text}>
+        {todo.text}
         <button onClick={() => {
             const newtodos = todos.filter(
                 (item) => item !== todo
