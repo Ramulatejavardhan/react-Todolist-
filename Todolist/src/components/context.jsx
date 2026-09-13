@@ -27,7 +27,8 @@ export default function Content(){
                 {todo.text}
         <button onClick={() => {
             const newtodos = todos.filter(
-                (item) => item.text !== todo.text);
+                (item) => item.text !== todo.text
+            );
             settodos(newtodos);
         }}>
             Delete
