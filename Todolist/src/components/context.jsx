@@ -9,7 +9,8 @@ export default function Content(){
             <br></br>
             <button onClick={()=>{if(task===""){
                     alert("Enter other task inside the input field");
-                }else{
+                }
+                else{
                     settodos([...todos,
                         {
                             text: task,
