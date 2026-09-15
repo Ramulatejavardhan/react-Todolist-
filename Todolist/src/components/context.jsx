@@ -34,6 +34,12 @@ export default function Content(){
                 completed: !item.completed
             };
         }
+        return item;
+    });
+    settodos(newTodos);
+    }}>
+    {todo.completed ? "Undo" : "Complete"}
+    </button>
         <button onClick={() =>{
             const newtodos = todos.filter(
                 (item) => item.text !== todo.text
