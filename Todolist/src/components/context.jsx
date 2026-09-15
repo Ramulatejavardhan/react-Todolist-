@@ -25,30 +25,41 @@ export default function Content(){
             <ul>
                 {todos.map((todo) => (
             <li key={todo.text}>
-                {todo.text}
-                <button onClick={() => {
-    const newTodos = todos.map((item) => {
-        if (item.text === todo.text) {
-            return {
-                ...item,
-                completed: !item.completed
-            };
-        }
-        return item;
-    });
-    settodos(newTodos);
+    <span
+        style={{
+            textDecoration: todo.completed ? "line-through" : "none"
+        }}
+    >
+        {todo.text}
+    </span>
+
+    <button onClick={() => {
+        const newTodos = todos.map((item) => {
+            if (item.text === todo.text) {
+                return {
+                    ...item,
+                    completed: !item.completed
+                };
+            }
+
+            return item;
+        });
+
+        settodos(newTodos);
     }}>
-    {todo.completed ? "Undo" : "Completed"}
+        {todo.completed ? "Undo" : "Complete"}
     </button>
-        <button onClick={() =>{
-            const newtodos = todos.filter(
-                (item) => item.text !== todo.text
-            );
-            settodos(newtodos);
-        }}>
-            Delete
-        </button>
-    </li>
+
+    <button onClick={() => {
+        const newtodos = todos.filter(
+            (item) => item.text !== todo.text
+        );
+
+        settodos(newtodos);
+    }}>
+        Delete
+    </button>
+</li>
         ))}
         </ul>
         </>
