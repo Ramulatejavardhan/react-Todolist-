@@ -26,7 +26,14 @@ export default function Content(){
                 {todos.map((todo) => (
             <li key={todo.text}>
                 {todo.text}
-                <button>Completed</button>
+                <button onClick={() => {
+    const newTodos = todos.map((item) => {
+        if (item.text === todo.text) {
+            return {
+                ...item,
+                completed: !item.completed
+            };
+        }
         <button onClick={() =>{
             const newtodos = todos.filter(
                 (item) => item.text !== todo.text
