@@ -38,7 +38,7 @@ export default function Content(){
     });
     settodos(newTodos);
     }}>
-    {todo.completed ? "Undo" : "Complete"}
+    {todo.completed ? "Undo" : "Completed"}
     </button>
         <button onClick={() =>{
             const newtodos = todos.filter(
